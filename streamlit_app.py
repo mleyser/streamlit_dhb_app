@@ -7,4 +7,6 @@ streamlit.header('Füchse Berlin')
 streamlit.text('Hier platzieren wir die Kaderliste der Füchse Berlin.')
 
 my_cnx = snowflake.connector.connect(**streamlit.secrets["snowflake"])
+my_cur = my_cnx.cursor()
+my_cur.execute("SELECT CURRENT_USER()")
 
