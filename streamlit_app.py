@@ -1,4 +1,5 @@
 import streamlit
+import snowflake.connector
 import pandas as pd
 
 streamlit.title('DHB Kader der Kontrahenten')
