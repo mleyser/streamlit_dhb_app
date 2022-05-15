@@ -1,6 +1,9 @@
 import streamlit
 import snowflake.connector
+from urllib.error import URLError
 import pandas as pd
+import requests
+
 
 streamlit.title('DHB Kader der Kontrahenten')
 streamlit.header('Füchse Berlin')
