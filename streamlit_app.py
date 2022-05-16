@@ -1,6 +1,7 @@
 import streamlit as st
 import snowflake.connector
 import pandas as pd
+import plotly.express as px
 from PIL import Image
 
 st.set_page_config(page_title = "Füchse Berlin", layout = "wide")
@@ -49,6 +50,11 @@ st.text("8️⃣: %, 9️⃣: AS, 1️⃣0️⃣: TF, 1️⃣1️⃣: ST, 1️�
 my_cur.execute("SELECT * FROM kader_berlin")
 my_data_rows = my_cur.fetchall()
 data_berlin = st.dataframe(my_data_rows)
+
+# Spielwiese
+
+df = pd.read_csv(kader_berlin_index_false.csv)
+print(df)
 
 # Sidebar
 
