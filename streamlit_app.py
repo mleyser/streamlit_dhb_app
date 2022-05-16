@@ -16,6 +16,9 @@ my_data_row = my_cur.fetchone()
 st.text("Hello from Snowflake:")
 st.text(my_data_row)
 
+except URLError as e:
+  streamlit.error()
+
 #Snowflake-related functions
 def get_load_list():
   with my_cnx.cursor() as my_cur:
