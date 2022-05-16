@@ -16,7 +16,7 @@ st.text(my_data_row)
 
 
 # actual team info
-st.title('Kader | Saison 2021/22')
+st.title('Füchse Berlin | Saison 2021/22')
 
 image = Image.open('kader_berlin.jpg')
 st.image(image)
