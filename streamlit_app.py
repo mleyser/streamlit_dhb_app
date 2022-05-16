@@ -18,17 +18,8 @@ st.text(my_data_row)
 # actual team info
 st.title('Füchse Berlin | Saison 2021/22')
 
-col1, col2, col3 = st.columns(3)
-
-with col1:
-    st.write(' ')
-
-with col2:
-    image = Image.open('kader_berlin.jpg')
-    st.image(image)
-
-with col3:
-    st.write(' ')
+image = Image.open('kader_berlin.jpg')
+st.image(image)
 
 st.header("Teamstatistik")
 
