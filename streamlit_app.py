@@ -6,7 +6,7 @@ from PIL import Image
 st.set_page_config(page_title = "Füchse Berlin", layout = "wide")
 
 # Check and printing sf connections
-st.text("Establishing Snowflake connection")
+st.text("Establishing Snowflake connection...")
 my_cnx = snowflake.connector.connect(**st.secrets["snowflake"])
 my_cur = my_cnx.cursor()
 st.text("User | Account | Region")
