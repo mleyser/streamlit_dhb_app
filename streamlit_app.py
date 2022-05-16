@@ -49,7 +49,7 @@ st.text("8️⃣: %, 9️⃣: AS, 1️⃣0️⃣: TF, 1️⃣1️⃣: ST, 1️�
 my_cur.execute("SELECT * FROM kader_berlin")
 my_data_rows = my_cur.fetchall()
 data_berlin = st.dataframe(np.DataFrame(my_data_rows,
-    columns=('col %d' % i for i in range(17))))
+    columns=('col %d' % i for i in range(16))))
 
 # Sidebar
 
