@@ -21,6 +21,10 @@ st.title('Füchse Berlin | Saison 2021/22')
 image = Image.open('kader_berlin.jpg')
 st.image(image)
 
+st.header("Teamstatistik")
+
+col1, col2 = st.columns(2)
+
 
 st.header("Spieler Gesamtstatistik")
 
@@ -34,6 +38,7 @@ data_berlin = st.dataframe(my_data_rows)
 # Sidebar
 
 st.sidebar.header("Hier Filter wählen:")
+
 
 
 
