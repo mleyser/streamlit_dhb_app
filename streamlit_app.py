@@ -21,4 +21,4 @@ my_data_rows = my_cur.fetchall()
 st.header("Kaderliste Füchse Berlin")
 df_berlin = pd.DataFrame(my_data_rows, columns = ['Nachname','Vorname','Position','Spiele','Tore','Fehlwürfe','Feldtore','7-Meter-Tore','Wurfquote','Assists','Technische Fehler','Steals','Blocks','Gelbe Karten','2 min Strafen','Rote Karten', 'Blaue Karten'])
 
-st.dataframe(df)
+st.dataframe(df_berlin)
