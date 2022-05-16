@@ -16,7 +16,7 @@ st.text("Hello from Snowflake:")
 st.text(my_data_row)
 
 st.text("Spaltennamen | 0: Nachname, 1: Vorname, 2: POS, 3: S, 4: T, 5: FW, 6: FT, 7: 7M")
-st.text("             |8: %, 9: AS, 10: TF, 11: ST, 12: BL, 13: GK, 14: 2M, 15: RK, 16: BK")
+st.text("\t\t\t\t|8: %, 9: AS, 10: TF, 11: ST, 12: BL, 13: GK, 14: 2M, 15: RK, 16: BK")
 my_cur.execute("SELECT * FROM kader_berlin")
 my_data_rows = my_cur.fetchall()
 data_berlin = st.dataframe(my_data_rows)
