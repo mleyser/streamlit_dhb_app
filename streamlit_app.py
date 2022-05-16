@@ -1,6 +1,7 @@
 import streamlit as st
 import snowflake.connector
 import pandas as pd
+from PIL import Image
 
 # Check and printing sf connections
 st.text("Establishing Snowflake connection")
@@ -14,6 +15,11 @@ st.text(my_data_row)
 
 # actual team info
 st.title('Füchse Berlin | Saison 2021/22')
+
+image = Image.open('kader_berlin.jpg')
+st.image(image, caption = "test")
+
+
 st.header("Spieler Gesamtstatistik")
 
 
