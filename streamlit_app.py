@@ -16,7 +16,7 @@ st.text(my_data_row)
 
 my_cur.execute("SELECT * FROM kader_berlin")
 my_data_rows = my_cur.fetchall()
-st.dataframe(pd.DataFrame(my_data_rows))
+st.dataframe(pd.DataFrame(my_data_rows),columns= ["Nachname","Vorname","Spielposition","Spiele","Tore","Fehlwürfe","Feldtore","Sieben-Meter-Tore","Wurfquote","Assists","Technische Fehler","Steals","Blocks","Gelbe Karten","Rote Karten","Blaue Karten"])
 
 
 
