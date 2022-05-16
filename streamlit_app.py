@@ -36,7 +36,7 @@ col1.text("Zuschauerschnitt: 51972")
 
 
 tabellenstand = Image.open('tabelle_hist_berlin.png')
-col2.image(tabellenstand, use_column_width=True)
+col2.image(tabellenstand)
 
 
 
