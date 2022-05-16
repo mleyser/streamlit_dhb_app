@@ -58,7 +58,7 @@ rad = st.sidebar.radio("Navigation",["Gesamtansicht","Gefilterte Ansicht"])
 # Sidebar
 
 if rad == "Gesamtansicht":
-  st.dataframe(df)
+  st.dataframe(df.style.format("{:.2}"))
 
 if rad == "Gefilterte Ansicht":
   st.sidebar.header("Hier Filter wählen:")
