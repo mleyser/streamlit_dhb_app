@@ -65,6 +65,8 @@ nachname = st.sidebar.multiselect("Spieler (Nachname):",options = df["Nachname"]
 
 df_selection = df.query("Position == @positionen & Nachname == @nachname")
 
+st.dataframe(df_selection)
+
 
 
 
