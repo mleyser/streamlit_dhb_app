@@ -9,19 +9,15 @@ my_cur = my_cnx.cursor()
 st.text("Hello from Snowflake:")
 my_cur.execute("SELECT CURRENT_USER()")
 my_data_row = my_cur.fetchone()
-st.text("Current user: "my_data_row)
+st.text("Current user: " + my_data_row)
 
 my_cur.execute("SELECT CURRENT_ACCOUNT()")
 my_data_row = my_cur.fetchone()
-st.text("Current account: "my_data_row)
+st.text("Current account: " + my_data_row)
 
 my_cur.execute("SELECT CURRENT_REGION()")
 my_data_row = my_cur.fetchone()
-st.text("Current region: "my_data_row)
-
-my_cur.execute("SELECT CURRENT_USER()")
-my_data_row = my_cur.fetchone()
-st.text("Current User: "my_data_row)
+st.text("Current region: " + my_data_row)
 
 
 # actual team info
