@@ -53,7 +53,7 @@ data_berlin = st.dataframe(my_data_rows)
 # Spielwiese
 
 df = pd.read_csv("kader_berlin_index_false.csv")
-print(df)
+st.dataframe(df)
 
 # Sidebar
 
