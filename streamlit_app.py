@@ -25,9 +25,15 @@ st.header("Teamstatistik")
 
 col1, col2 = st.columns(2)
 
+#col1.subheader('Platzierungen Saison 2021/22')
+col1.text("Siege | Unentschiedens | Niederlagen: 21 | 4 | 4")
+col1.text("Tore: 858")
+col1.text("Gegentore: 753")
+col1.text("Differenz: 105")
+
+
 tabellenstand = Image.open('tabelle_hist_berlin.png')
-col1.header('Platzierungen Saison 2021/22')
-col1.image(tabellenstand, use_column_width=True)
+col2.image(tabellenstand, use_column_width=True)
 
 
 
