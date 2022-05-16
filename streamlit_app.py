@@ -17,7 +17,7 @@ st.text(my_data_row)
 
 my_cur.execute("SELECT * FROM kader_berlin")
 my_data_rows = my_cur.fetchall()
-streamlit.header("Kader Füchse Berlin der Saison 2021/22")
+streamlit.header("Kader Füchse Berlin der Saison 2021\/22")
 streamlit.dataframe(my_data_rows)
 
 
