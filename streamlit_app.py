@@ -21,6 +21,8 @@ st.title('Füchse Berlin | Saison 2021/22')
 image = Image.open('kader_berlin.jpg')
 st.image(image)
 
+st.markdown("---")
+
 st.header("Teamstatistik")
 
 col1, col2 = st.columns(2)
@@ -39,7 +41,7 @@ col1.markdown("**Ticketverkäufe**: 95240")
 tabellenstand = Image.open('tabelle_hist_berlin.png')
 col2.image(tabellenstand)
 
-
+st.markdown("---")
 
 st.header("Spieler Gesamtstatistik")
 
