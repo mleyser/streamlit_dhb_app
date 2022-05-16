@@ -26,7 +26,7 @@ st.header("Teamstatistik")
 col1, col2 = st.columns(2)
 
 #col1.subheader('Platzierungen Saison 2021/22')
-col1.text("**Siege** | Unentschiedens | Niederlagen: 21 | 4 | 4")
+col1.text("_Siege_ | Unentschiedens | Niederlagen: 21 | 4 | 4")
 col1.text("**Tore**: 858")
 col1.text("**Gegentore**: 753")
 col1.text("**Differenz**: 105")
