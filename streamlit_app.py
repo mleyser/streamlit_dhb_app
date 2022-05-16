@@ -53,7 +53,12 @@ st.header("Spieler Gesamtstatistik")
 
 # Spielwiese
 
-df = pd.read_csv("kader_berlin_index_false.csv")
+@st.cache
+def get_data_from_csv():
+  df = pd.read_csv("kader_berlin_index_false.csv")
+  return df
+df = get_data_from_csv()
+  
 rad = st.sidebar.radio("Navigation",["Gesamtansicht","Gefilterte Ansicht"])
 
 # Sidebar
