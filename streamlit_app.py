@@ -19,6 +19,5 @@ st.text(my_data_row)
 my_cur.execute("select * from kader_berlin")
 my_data_rows = my_cur.fetchall()
 st.header("Kaderliste Füchse Berlin")
-df_berlin = my_data_rows.to_pandas()
+df_berlin = my_data_rows
 
-st.dataframe(df_berlin)
