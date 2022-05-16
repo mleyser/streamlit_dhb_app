@@ -25,6 +25,11 @@ st.header("Teamstatistik")
 
 col1, col2 = st.columns(2)
 
+tabellenstand = Image.open('table_hist_berlin.png')
+col1.header('Platzierungen Saison 2021/22')
+col1.image(tabellenstand, use_column_width=True)
+
+
 
 st.header("Spieler Gesamtstatistik")
 
