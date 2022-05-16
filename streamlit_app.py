@@ -64,9 +64,9 @@ if rad == "Gefilterte Ansicht":
   st.text("Erstansicht ist der Stammtorhüter")
   st.sidebar.header("Hier Filter wählen:")
 
-  positionen = st.sidebar.multiselect("Spielposition (Angriffsmodus):", options = df["Position"].unique(), default = df["Position"]."TW")
+  positionen = st.sidebar.multiselect("Spielposition (Angriffsmodus):", options = df["Position"].unique(), default = ["TW"])
 
-  nachname = st.sidebar.multiselect("Spieler (Nachname):",options = df["Nachname"].unique(), default = df["Nachname"]."Dejan")
+  nachname = st.sidebar.multiselect("Spieler (Nachname):",options = df["Nachname"].unique(), default = ["Dejan"])
 
   df_selection = df.query("Position == @positionen & Nachname == @nachname")
 
