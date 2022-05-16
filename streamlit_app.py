@@ -53,7 +53,6 @@ st.text("Erstansicht absteigend nach geworfenen Toren sortiert")
 # Spielwiese
 
 df = pd.read_csv("kader_berlin_index_false.csv")
-st.dataframe(df)
 
 # Sidebar
 
