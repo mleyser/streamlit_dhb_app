@@ -32,8 +32,8 @@ col1.markdown('**Tore**: 858')
 col1.markdown("**Gegentore**: 753")
 col1.markdown("**Differenz**: 105")
 col1.markdown("**Bester 7m-Schütze**: Hans Lindberg(108/118/91.5%)")
-col1.markdown("**Sünder**: Mijajlo Marsenic (57)")
-col1.markdown("**Zuschauerschnitt**: 51972")
+col1.markdown("**Sünder**: Mijajlo Marsenic(57)")
+col1.markdown("**Ticketkäufe**: 95240")
 
 
 tabellenstand = Image.open('tabelle_hist_berlin.png')
