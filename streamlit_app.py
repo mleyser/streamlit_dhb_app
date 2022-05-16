@@ -61,7 +61,7 @@ st.sidebar.header("Hier Filter wählen:")
 
 positionen = st.sidebar.multiselect("Spielposition (Angriffsmodus):", options = df["Position"].unique(), default = df["Position"].unique())
 
-nachname = st.side.multiselect("Spieler (Nachname):",options = df["Nachname"].unique(), default = df["Nachname"].unique())
+nachname = st.sidebar.multiselect("Spieler (Nachname):",options = df["Nachname"].unique(), default = df["Nachname"].unique())
 
 
 
