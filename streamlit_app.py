@@ -61,10 +61,10 @@ if rad == "Gesamtansicht":
   st.dataframe(df)
 
 if rad == "Gefilterte Ansicht":
-  st.text("Erstansicht ist der Stammtorhüter")
+  st.text("Erstansicht zeigt Stammtorhüter")
   st.sidebar.header("Hier Filter wählen:")
 
-  positionen = st.sidebar.multiselect("Spielposition (Angriffsmodus):", options = df["Position"].unique(), default = ["TW"])
+  positionen = st.sidebar.multiselect("Spielposition (Angriffsmodus):", options = df["Position"].unique(), default = df["Positionen".unique])
 
   nachname = st.sidebar.multiselect("Spieler (Nachname):",options = df["Nachname"].unique(), default = ["Milosavljev"])
 
