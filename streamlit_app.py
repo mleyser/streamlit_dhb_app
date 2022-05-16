@@ -31,6 +31,10 @@ my_cur.execute("SELECT * FROM kader_berlin")
 my_data_rows = my_cur.fetchall()
 data_berlin = st.dataframe(my_data_rows)
 
+# Sidebar
+
+st.sidebar.header("Hier Filter wählen:")
+
 
 
 
