@@ -53,18 +53,23 @@ st.text("Erstansicht absteigend nach geworfenen Toren sortiert")
 # Spielwiese
 
 df = pd.read_csv("kader_berlin_index_false.csv")
+rad = st.sidebar.radio("Navigation",["Gesamtansicht","Gefilterte Ansicht"])
 
 # Sidebar
 
-st.sidebar.header("Hier Filter wählen:")
+if rad == "Gesamtansicht"
+  st.dataframe(df)
 
-positionen = st.sidebar.multiselect("Spielposition (Angriffsmodus):", options = df["Position"].unique(), default = df["Position"].unique())
+if rad = "Gefilterte Ansicht"
+  st.sidebar.header("Hier Filter wählen:")
 
-nachname = st.sidebar.multiselect("Spieler (Nachname):",options = df["Nachname"].unique(), default = df["Nachname"].unique())
+  positionen = st.sidebar.multiselect("Spielposition (Angriffsmodus):", options = df["Position"].unique(), default = df["Position"].unique())
 
-df_selection = df.query("Position == @positionen & Nachname == @nachname")
+  nachname = st.sidebar.multiselect("Spieler (Nachname):",options = df["Nachname"].unique(), default = df["Nachname"].unique())
 
-st.dataframe(df_selection)
+  df_selection = df.query("Position == @positionen & Nachname == @nachname")
+
+  st.dataframe(df_selection)
 
 
 
