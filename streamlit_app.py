@@ -2,14 +2,29 @@ import streamlit as st
 import snowflake.connector
 import pandas as pd
 
+# Check and printing sf connections
 st.text("Establishing Snowflake connection")
 my_cnx = snowflake.connector.connect(**st.secrets["snowflake"])
 my_cur = my_cnx.cursor()
-my_cur.execute("SELECT CURRENT_USER(), CURRENT_ACCOUNT(), CURRENT_REGION()")
-my_data_row = my_cur.fetchone()
 st.text("Hello from Snowflake:")
-st.text(my_data_row)
+my_cur.execute("SELECT CURRENT_USER()")
+my_data_row = my_cur.fetchone()
+st.text("Current user: "my_data_row)
 
+my_cur.execute("SELECT CURRENT_ACCOUNT()")
+my_data_row = my_cur.fetchone()
+st.text("Current account: "my_data_row)
+
+my_cur.execute("SELECT CURRENT_REGION()")
+my_data_row = my_cur.fetchone()
+st.text("Current region: "my_data_row)
+
+my_cur.execute("SELECT CURRENT_USER()")
+my_data_row = my_cur.fetchone()
+st.text("Current User: "my_data_row)
+
+
+# actual team info
 st.title('Füchse Berlin | Saison 2021/22')
 st.header("Spieler Gesamtstatistik")
 
