@@ -1,7 +1,6 @@
 import streamlit as st
 import snowflake.connector
 import pandas as pd
-import requests
 
 
 st.title('DHB Kader der Kontrahenten')
