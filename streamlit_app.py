@@ -17,7 +17,7 @@ st.text(my_data_row)
 st.title('Füchse Berlin | Saison 2021/22')
 
 image = Image.open('kader_berlin.jpg')
-st.image(image, caption = "test")
+st.image(image, caption = "Quelle: https://www.liquimoly-hbl.de/de/import/teams/fuechse-berlin/")
 
 
 st.header("Spieler Gesamtstatistik")
