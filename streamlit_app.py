@@ -20,7 +20,7 @@ my_data_rows = my_cur.fetchall()
 data_berlin = st.table(my_data_rows)
 
 grid_response = AgGrid(
-    data,
+    data_berlin,
     gridOptions=gridOptions,
     data_return_mode='AS_INPUT', 
     update_mode='MODEL_CHANGED', 
