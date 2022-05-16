@@ -63,7 +63,7 @@ positionen = st.sidebar.multiselect("Spielposition (Angriffsmodus):", options = 
 
 nachname = st.sidebar.multiselect("Spieler (Nachname):",options = df["Nachname"].unique(), default = df["Nachname"].unique())
 
-
+df_selection = df.query("Position == @positionen & Nachname == @nachname")
 
 
 
