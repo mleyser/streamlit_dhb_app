@@ -42,7 +42,6 @@ col2.image(tabellenstand)
 
 
 st.header("Spieler Gesamtstatistik")
-st.text("Erstansicht absteigend nach geworfenen Toren sortiert")
 
 #st.text("Spaltennamen | 0️⃣: Nachname, 1️⃣: Vorname, 2️⃣: POS, 3️⃣: S, 4️⃣: T, 5️⃣: FW, 6️⃣: FT, 7️⃣: 7M")
 #st.text("8️⃣: %, 9️⃣: AS, 1️⃣0️⃣: TF, 1️⃣1️⃣: ST, 1️⃣2️⃣: BL, 1️⃣3️⃣: GK, 1️⃣4️⃣: 2M, 1️⃣5️⃣: RK, 1️⃣6️⃣: BK")
@@ -58,14 +57,16 @@ rad = st.sidebar.radio("Navigation",["Gesamtansicht","Gefilterte Ansicht"])
 # Sidebar
 
 if rad == "Gesamtansicht":
+  st.text("Erstansicht absteigend nach geworfenen Toren sortiert")
   st.dataframe(df)
 
 if rad == "Gefilterte Ansicht":
+  st.text("Erstansicht ist der Stammtorhüter")
   st.sidebar.header("Hier Filter wählen:")
 
-  positionen = st.sidebar.multiselect("Spielposition (Angriffsmodus):", options = df["Position"].unique(), default = df["Position"].unique())
+  positionen = st.sidebar.multiselect("Spielposition (Angriffsmodus):", options = df["Position"].unique(), default = df["Position"]."TW")
 
-  nachname = st.sidebar.multiselect("Spieler (Nachname):",options = df["Nachname"].unique(), default = df["Nachname"].unique())
+  nachname = st.sidebar.multiselect("Spieler (Nachname):",options = df["Nachname"].unique(), default = df["Nachname"]."Dejan")
 
   df_selection = df.query("Position == @positionen & Nachname == @nachname")
 
