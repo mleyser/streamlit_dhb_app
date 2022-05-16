@@ -15,8 +15,5 @@ my_data_row = my_cur.fetchone()
 st.text("Hello from Snowflake:")
 st.text(my_data_row)
 
-my_cur.execute("select * from kader_berlin")
-my_data_rows = my_cur.fetchall()
-streamlit.dataframe(my_data_rows)
 
 
