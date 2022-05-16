@@ -57,10 +57,10 @@ rad = st.sidebar.radio("Navigation",["Gesamtansicht","Gefilterte Ansicht"])
 
 # Sidebar
 
-if rad == "Gesamtansicht"
+if rad == "Gesamtansicht":
   st.dataframe(df)
 
-if rad = "Gefilterte Ansicht"
+if rad = "Gefilterte Ansicht":
   st.sidebar.header("Hier Filter wählen:")
 
   positionen = st.sidebar.multiselect("Spielposition (Angriffsmodus):", options = df["Position"].unique(), default = df["Position"].unique())
