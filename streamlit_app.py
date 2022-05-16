@@ -15,7 +15,7 @@ my_data_row = my_cur.fetchone()
 st.text("Hello from Snowflake:")
 st.text(my_data_row)
 
-st.text("0: Nachname, 1: Vorname, 2: POS, 3: S, 4: T")
+st.text("Spaltenbezeichnungen | 0: Nachname, 1: Vorname, 2: POS, 3: S, 4: T")
 my_cur.execute("SELECT * FROM kader_berlin")
 my_data_rows = my_cur.fetchall()
 data_berlin = st.dataframe(my_data_rows)
