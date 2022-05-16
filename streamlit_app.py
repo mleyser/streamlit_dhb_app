@@ -16,7 +16,7 @@ st.text(my_data_row)
 
 my_cur.execute("SELECT * FROM kader_berlin")
 my_data_rows = my_cur.fetchall()
-pd.DataFrame(my_data_rows)
+st.dataframe(pd.DataFrame(my_data_rows))
 
 
 
