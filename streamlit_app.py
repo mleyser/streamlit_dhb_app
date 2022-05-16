@@ -12,23 +12,12 @@ st.text('Hier platzieren wir die Kaderliste der Füchse Berlin.')
 my_cnx = snowflake.connector.connect(**st.secrets["snowflake"])
 my_cur = my_cnx.cursor()
 my_cur.execute("SELECT CURRENT_USER(), CURRENT_ACCOUNT(), CURRENT_REGION()")
-my_data_row = my_cur.fetchone()
+my_data_row = my_cur.fetc)
 st.text("Hello from Snowflake:")
 st.text(my_data_row)
 
-except URLError as e:
-  streamlit.error()
+my_cur.execute("select * from kader_berlin")
+my_data_rows = my_cur.fetchall()
+streamlit.dataframe(my_a)
 
-#Snowflake-related functions
-def get_load_list():
-  with my_cnx.cursor() as my_cur:
-    my_cur.execute("select * from kader_berlin")
-    return my_cur.fetchall()
-
-# Add a button to load the fruit
-if streamlit.button('Get Player List'):
-  my_cnx = snowflake.connector.connect(**streamlit.secrets["snowflake"])
-  my_data_rows = get_load_list()
-  my_cnx.close()
-  streamlit.dataframe(my_data_rows)
 
