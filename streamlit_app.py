@@ -48,8 +48,7 @@ st.text("Spaltennamen | 0️⃣: Nachname, 1️⃣: Vorname, 2️⃣: POS, 3️�
 st.text("8️⃣: %, 9️⃣: AS, 1️⃣0️⃣: TF, 1️⃣1️⃣: ST, 1️⃣2️⃣: BL, 1️⃣3️⃣: GK, 1️⃣4️⃣: 2M, 1️⃣5️⃣: RK, 1️⃣6️⃣: BK")
 my_cur.execute("SELECT * FROM kader_berlin")
 my_data_rows = my_cur.fetchall()
-data_berlin = st.dataframe(np.DataFrame(my_data_rows,
-    columns=('col %d' % i for i in range(16))))
+data_berlin = st.dataframe(my_data_rows)
 
 # Sidebar
 
