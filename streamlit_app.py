@@ -59,7 +59,7 @@ st.dataframe(df)
 
 st.sidebar.header("Hier Filter wählen:")
 
-positionen = st.sidebar.multiselect("Wähle Spielposition:", options = df["Position"].unique(), default = df["Position"].unique())
+positionen = st.sidebar.multiselect("Spielposition:", options = df["Position"].unique(), default = df["Position"].unique())
 
 
 
