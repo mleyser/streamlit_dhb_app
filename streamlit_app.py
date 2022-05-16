@@ -54,7 +54,7 @@ data_berlin = st.dataframe(my_data_rows)
 
 st.sidebar.header("Hier Filter wählen:")
 
-positionen = st.sidebar.multiselect("Wähle die Position aus:", options=my_data_rows["2"].unique(), default=my_data_rows["2"].unique())
+positionen = st.sidebar.multiselect("Wähle die Position aus:", options=my_data_rows[2].unique(), default=my_data_rows[2].unique())
 
 
 
