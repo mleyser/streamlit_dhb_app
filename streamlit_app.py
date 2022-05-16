@@ -44,8 +44,8 @@ col2.image(tabellenstand)
 st.header("Spieler Gesamtstatistik")
 
 
-st.text("Spaltennamen | 0: Nachname, 1: Vorname, 2: POS, 3: S, 4: T, 5: FW, 6: FT, 7: 7M")
-st.text("8: %, 9: AS, 10: TF, 11: ST, 12: BL, 13: GK, 14: 2M, 15: RK, 16: BK")
+st.text("Spaltennamen | 0️⃣: Nachname, 1️⃣: Vorname, 2️⃣: POS, 3️⃣: S, 4️⃣: T, 5️⃣: FW, 6️⃣: FT, 7️⃣: 7M")
+st.text("8️⃣: %, 9️⃣: AS, 1️⃣0️⃣: TF, 1️⃣1️⃣: ST, 1️⃣2️⃣: BL, 1️⃣3️⃣: GK, 1️⃣4️⃣: 2M, 1️⃣5️⃣: RK, 1️⃣6️⃣: BK")
 my_cur.execute("SELECT * FROM kader_berlin")
 my_data_rows = my_cur.fetchall()
 data_berlin = st.dataframe(my_data_rows)
