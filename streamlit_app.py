@@ -54,6 +54,12 @@ data_berlin = st.dataframe(my_data_rows)
 
 st.sidebar.header("Hier Filter wählen:")
 
+positionen = st.sidebar.multiselect(
+          "Wähle die Spielerposition:",
+          options=data_berlin[2].unique(),
+          default=data_berlin[2].unique()
+)
+
 
 
 
