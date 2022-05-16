@@ -3,6 +3,8 @@ import snowflake.connector
 import pandas as pd
 from PIL import Image
 
+st.set_page_config(page_title = "Füchse Berlin", layout = "wide")
+
 # Check and printing sf connections
 st.text("Establishing Snowflake connection")
 my_cnx = snowflake.connector.connect(**st.secrets["snowflake"])
@@ -14,7 +16,7 @@ st.text(my_data_row)
 
 
 # actual team info
-st.title('Füchse Berlin | Saison 2021/22')
+st.title('Kader | Saison 2021/22')
 
 image = Image.open('kader_berlin.jpg')
 st.image(image)
