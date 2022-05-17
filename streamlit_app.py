@@ -59,7 +59,11 @@ def get_data_from_csv():
   df = pd.read_csv("kader_berlin_index_false.csv")
   return df
 df = get_data_from_csv()
-  
+
+with st.sidebar.container():
+  logo = Image.open('dhb_logo.png')
+  st.image(logo, use_column_width=True)
+
 rad = st.sidebar.radio("Navigation",["Gesamtansicht","Gefilterte Ansicht"])
 
 # Sidebar
